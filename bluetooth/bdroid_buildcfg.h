@@ -36,5 +36,5 @@
 #define BTHW_FW_EXTENDED_CONFIGURATION_ONLY_I2SPCM_CONFIG FALSE
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
-#define AVDT_NUM_SEPS 12
+#define AVDT_NUM_SEPS 35
 #endif
