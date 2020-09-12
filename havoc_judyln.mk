@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -52,9 +52,9 @@ TARGET_VENDOR_DEVICE_NAME := judyln
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judyln \
     PRODUCT_NAME=judyln_lao_com \
-    PRIVATE_BUILD_DESC="judyln_lao_com-user 9 PKQ1.181105.001 193300114dd82 release-keys"
+    PRIVATE_BUILD_DESC="judyln_lao_com-user 10 QKQ1.191222.002 200901500db90 release-keys"
 
-BUILD_FINGERPRINT="lge/judyln_lao_com/judyln:9/PKQ1.181105.001/193300114dd82:user/release-keys"
+BUILD_FINGERPRINT="lge/judyln_lao_com/judyln:10/QKQ1.191222.002/200901500db90:user/release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \
