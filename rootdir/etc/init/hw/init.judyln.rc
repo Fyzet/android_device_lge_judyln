@@ -29,8 +29,16 @@ on boot
     chmod 664  /sys/class/lge_mme/mme_ctrl/hw_test_value
     # END MME diver
 
+# Begin Immersion Changes
+service immvibed /vendor/bin/immvibed -p 99 -u 1000
+    class late_start
+    user root
+    group root
+    ioprio rt 4
     
 on post-fs
 # Support tuxera exfat filesystem
     insmod /vendor/lib/modules/texfat.ko
 
+on init
+    setprop sys.usb.configfs 1

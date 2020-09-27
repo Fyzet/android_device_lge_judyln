@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/havoc_judyln.mk
+    $(LOCAL_DIR)/rr_judyln.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_judyln-userdebug \
-    havoc_judyln-eng
+    rr_judyln-userdebug \
+    rr_judyln-eng
