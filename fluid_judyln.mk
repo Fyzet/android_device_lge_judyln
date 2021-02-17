@@ -29,7 +29,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from judyln device
 $(call inherit-product, device/lge/judyln/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Fluid stuff.
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
@@ -48,3 +48,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-om-lg
 
 TARGET_VENDOR_PRODUCT_NAME := judyln_lao_com
 TARGET_VENDOR_DEVICE_NAME := judyln
+
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=Fyzet
